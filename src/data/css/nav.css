@@ -1,0 +1,71 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+nav{
+    border-bottom: 1px solid gray;
+    padding: 10px 30px;
+}
+
+nav div.phone-nav{
+   display: none;
+   margin: 8px 0px;
+}
+
+nav span.main-heading h1{
+    display: inline-block;
+    font-size: 1.2rem;
+    cursor: pointer;
+}
+
+nav ul.left-side-links{
+    float: right;
+}
+
+nav ul.left-side-links, nav ul.left-side-links li{
+    display: inline;
+    list-style: none;
+}
+
+nav ul.left-side-links li{
+    cursor: pointer;
+    padding: 0px 10px;
+    margin: 0px 5px;
+    font-size: 1.2rem;
+    color: rgb(85, 83, 83);
+}
+
+nav div.phone-menues{
+   display: none;
+   overflow: hidden;
+   height: 0px;
+
+   transition: all 0.4s ease-in-out;
+}
+
+nav div.phone-menues ul{
+   list-style: none;
+   font-size: 1.2rem;
+}
+
+nav div.phone-menues ul li{
+    margin: 14px 0px;
+    cursor: pointer;
+}
+
+@media screen  and (max-width:600px){
+
+    nav div.phone-nav{
+        display: block;
+     }
+
+     nav div.phone-menues{
+        display: block;
+     }
+
+    nav span.main-heading, nav ul.left-side-links{
+        display: none;
+    }
+}
