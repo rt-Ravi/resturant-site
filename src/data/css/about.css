@@ -1,0 +1,75 @@
+main div.main-con-about{
+    border: 2px solid black;
+}
+
+main div.main-con-about div.sub-con-about{
+    border: 2px solid rgb(175, 164, 164);
+}
+
+main div.main-con-about img{
+    width: 100px;
+}
+
+main div.main-con-about div.sub-con-about div.owner{
+    border: 2px solid rgb(175, 164, 164);
+    width: 400px;
+    margin: 20px auto;
+}
+
+main div.main-con-about div.sub-con-about div.owner div{
+   margin: auto;
+   width: 200px;
+   border: 2px solid red;
+}
+
+main div.main-con-about div.sub-con-about div.owner div img{
+    width: 100%;
+    border-radius: 50%;
+ }
+
+ main div.main-con-about div.sub-con-about div.owner h2{
+    text-align: center;
+    font-size: 1.8rem;
+  }
+
+ main div.main-con-about div.sub-con-about div.owner p{
+   text-align: justify;
+   padding: 10px 15px;
+ }
+
+ main div.main-con-about div.sub-con-about div.partner{
+   width: 600px;
+   margin: 20px auto;
+   border: 1px solid black;
+}
+
+main div.main-con-about div.sub-con-about div.partner > div{
+   display: flex;
+}
+
+main div.main-con-about div.sub-con-about div.partner > div > div{
+   border: 1px solid rebeccapurple;
+   margin: 0px 10px;
+ }
+
+ main div.main-con-about div.sub-con-about div.partner > div > div h3{
+    text-align: center;
+    font-size: 1.1rem;
+}
+
+main div.main-con-about div.sub-con-about div.partner div.about-img-con{
+    border: 1px solid pink;
+    margin: auto;
+    width: 120px;
+}
+
+main div.main-con-about div.sub-con-about div.partner div.about-img-con img{
+   border-radius: 50%;
+   width: 100%;
+}
+
+main div.main-con-about div.sub-con-about div.partner p{
+    text-align: justify;
+    padding: 10px 5px;
+ }
+ 
