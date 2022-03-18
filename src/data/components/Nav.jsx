@@ -44,7 +44,7 @@ function Navbar() {
                     <p>Click</p>
                 </div>
                 <span className="main-heading">
-                    <h1>Gourmet au Catering</h1>
+                    <Link to="/"><h1>Gourmet au Catering</h1></Link>
                 </span>
                 <ul className="left-side-links">
                     <Link to="/about"><li>About</li></ Link>
@@ -58,14 +58,14 @@ function Navbar() {
                        <Link to="/#"><li>Ice Cream</li></Link>
                        </ul>
                     </li>
-                    <Link to="/#"><li>Contact</li></Link>
+                    <Link to="/contact"><li>Contact</li></Link>
                 </ul>
                 <div className="phone-menues" id="p-m" style={p_style}>
                     <ul>
-                    <Link to="/#"><li>Home</li></Link>
-                    <Link to="/#"><li>About</li></Link>
+                    <Link to="/"><li>Home</li></Link>
+                    <Link to="/about"><li>About</li></Link>
                     <Link to="/#"><li>Menu</li></Link>
-                    <Link to="/#"><li>Contact</li></Link>
+                    <Link to="/contact"><li>Contact</li></Link>
                     </ul>
                 </div>
             </nav>

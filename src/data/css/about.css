@@ -1,25 +1,19 @@
-main div.main-con-about{
-    border: 2px solid black;
-}
-
-main div.main-con-about div.sub-con-about{
-    border: 2px solid rgb(175, 164, 164);
-}
 
 main div.main-con-about img{
     width: 100px;
 }
 
 main div.main-con-about div.sub-con-about div.owner{
-    border: 2px solid rgb(175, 164, 164);
-    width: 400px;
+    /* border: 2px solid rgb(175, 164, 164); */
+    width: 600px;
     margin: 20px auto;
+    background-color: rgb(245, 245, 245);
 }
 
 main div.main-con-about div.sub-con-about div.owner div{
    margin: auto;
    width: 200px;
-   border: 2px solid red;
+   /* border: 2px solid red; */
 }
 
 main div.main-con-about div.sub-con-about div.owner div img{
@@ -35,12 +29,15 @@ main div.main-con-about div.sub-con-about div.owner div img{
  main div.main-con-about div.sub-con-about div.owner p{
    text-align: justify;
    padding: 10px 15px;
+   background-color: rgb(233, 233, 233);
+   margin: 10px 0px;
  }
 
  main div.main-con-about div.sub-con-about div.partner{
    width: 600px;
    margin: 20px auto;
-   border: 1px solid black;
+   background-color: rgb(245, 245, 245);
+   /* border: 1px solid black; */
 }
 
 main div.main-con-about div.sub-con-about div.partner > div{
@@ -48,7 +45,7 @@ main div.main-con-about div.sub-con-about div.partner > div{
 }
 
 main div.main-con-about div.sub-con-about div.partner > div > div{
-   border: 1px solid rebeccapurple;
+   /* border: 1px solid rebeccapurple; */
    margin: 0px 10px;
  }
 
@@ -58,9 +55,9 @@ main div.main-con-about div.sub-con-about div.partner > div > div{
 }
 
 main div.main-con-about div.sub-con-about div.partner div.about-img-con{
-    border: 1px solid pink;
+    /* border: 1px solid pink; */
     margin: auto;
-    width: 120px;
+    width: 160px;
 }
 
 main div.main-con-about div.sub-con-about div.partner div.about-img-con img{
@@ -71,5 +68,41 @@ main div.main-con-about div.sub-con-about div.partner div.about-img-con img{
 main div.main-con-about div.sub-con-about div.partner p{
     text-align: justify;
     padding: 10px 5px;
+    background-color: rgb(233, 233, 233);
+    margin: 10px 0px;
  }
  
+@media  screen and (max-width:650px) {
+
+    main div.main-con-about div.sub-con-about div.owner{
+        width: 95vw;
+        box-sizing: border-box;
+    }
+
+    main div.main-con-about div.sub-con-about div.owner div{
+       width: 60%;
+     }
+
+    main div.main-con-about div.sub-con-about div.partner{
+      width: 95vw;
+     }
+
+    main div.main-con-about div.sub-con-about div.partner > div.partners{
+       flex-direction: column;
+       /* border: 4px solid olive; */
+     }
+
+     main div.main-con-about div.sub-con-about div.partner > div.partners > div{
+       margin: 8px 0px;
+      }
+
+     main div.main-con-about div.sub-con-about div.partner div.about-img-con{
+      margin: 0px;
+      width: 150px;
+    }
+
+      main div.main-con-about div.sub-con-about div.partner > div > div h3{
+        text-align: left;
+    }
+    
+}

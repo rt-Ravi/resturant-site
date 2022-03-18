@@ -14,6 +14,11 @@ nav div.phone-nav{
    margin: 8px 0px;
 }
 
+nav div.phone-nav p{
+    cursor: pointer;
+ }
+ 
+
 nav span.main-heading h1{
     display: inline-block;
     font-size: 1.2rem;
@@ -37,7 +42,7 @@ nav ul.left-side-links li.menu-btn .bar{
     position: absolute;
     top: 100%;
     left: 10%;
-    background-color: gray;
+    background-color: rgb(114, 14, 121);
     z-index: 1;
     width: 110px;
     list-style: none;

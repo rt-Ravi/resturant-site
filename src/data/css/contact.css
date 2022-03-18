@@ -1,0 +1,48 @@
+main div.main-contact-con{
+    /* border: 2px solid purple; */
+    padding: 40px 8px;
+}
+
+main div.main-contact-con div.sub-contact-con{
+    /* border: 2px solid rgb(136, 221, 102); */
+    width: 500px;
+    margin: auto;
+    box-sizing: border-box;
+    background-color: rgb(241, 241, 241);
+    padding: 15px 10px;
+}
+
+main div.main-contact-con div.sub-contact-con h2{
+   text-align: center;
+   margin: 10px 0px;
+}
+
+main div.main-contact-con div.sub-contact-con form input.mail,
+main div.main-contact-con div.sub-contact-con form textarea
+{
+   display: block;
+   box-sizing: border-box;
+   width: 100%;
+   padding: 10px 6px;
+   font-size: 1.5rem;
+   margin: 10px 0px;
+   border-radius: 10px;
+   border: none;
+}
+
+main div.main-contact-con div.sub-contact-con form input.btn
+{
+    padding: 10px 15px;
+    font-size: 1.2rem;
+    border: none;
+    border-radius: 10px;
+    background-color: rgb(113, 60, 163);
+    color: white;
+}
+
+@media screen and (max-width: 550px){
+    main div.main-contact-con div.sub-contact-con{
+        width: 95vw;
+    }
+}
+
