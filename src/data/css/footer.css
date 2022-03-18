@@ -1,0 +1,10 @@
+footer div{
+    padding: 15px 5px;
+    background-color: rgb(240, 240, 240);
+}
+
+footer div p{
+    text-align: center;
+    font-size: 1.5rem;
+    color: gray;
+}

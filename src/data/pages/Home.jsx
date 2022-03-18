@@ -8,6 +8,18 @@ function HomePage() {
 
     const [input, setInput] = useState({});
 
+    const handleChange = (event) => {
+        const name = event.target.name;
+        const value = event.target.value;
+
+        setInput(values => ({...values, [name]:value}));
+    }
+
+    const showInput  = (event) => {
+        event.preventDefault();
+        // alert(input.username + ", " + input.number + ", " + input.date + ", "+ input.message);
+    }
+
     return (
         <>
             <main>
@@ -53,11 +65,11 @@ function HomePage() {
                             <p>You can also contact us by phone 00553123-2323 or email catering@catering.com, or you can send us a message here:</p>
                         </div>
                         <form action="">
-                            <input type="text" placeholder="Name"></input>
-                            <input type="number" placeholder="How many People"></input>
-                            <input type="date" />
-                            <input type="text" placeholder="Message \ Special requirements" />
-                            <input type="submit" value="SEND MESSAGE" />
+                            <input type="text" placeholder="Name" name="username" value={input.username || ""} onChange={handleChange}></input>
+                            <input type="number" placeholder="How many People" name="number" value={input.number || ""} onChange={handleChange}></input>
+                            <input type="date" name="date" value={input.date || ""} onChange={handleChange}/>
+                            <input type="text" placeholder="Message \ Special requirements" name="message" value={input.message || ""} onChange={handleChange}/>
+                            <input type="submit" value="SEND MESSAGE" onClick={showInput}/>
                         </form>
                     </div>
                 </div>

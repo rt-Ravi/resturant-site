@@ -24,6 +24,39 @@ nav ul.left-side-links{
     float: right;
 }
 
+nav a{
+    text-decoration: none;
+}
+
+nav ul.left-side-links li.menu-btn{
+    position: relative;
+    display: inline-block;
+}
+
+nav ul.left-side-links li.menu-btn .bar{
+    position: absolute;
+    top: 100%;
+    left: 10%;
+    background-color: gray;
+    z-index: 1;
+    width: 110px;
+    list-style: none;
+
+    visibility: hidden;
+}
+
+nav ul.left-side-links li.menu-btn .bar li{
+    display: block;
+    color: white;
+    padding: 5px 2px;
+    font-size: 1rem;
+}
+
+nav ul.left-side-links li.menu-btn:hover .bar{
+    visibility: visible;
+}
+
+
 nav ul.left-side-links, nav ul.left-side-links li{
     display: inline;
     list-style: none;

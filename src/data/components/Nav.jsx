@@ -1,4 +1,5 @@
 import "../css/nav.css";
+import {Link } from 'react-router-dom';
 import { useState } from "react";
 
 function Navbar() {
@@ -46,16 +47,25 @@ function Navbar() {
                     <h1>Gourmet au Catering</h1>
                 </span>
                 <ul className="left-side-links">
-                    <li>About</li>
-                    <li>Menu</li>
-                    <li>Contact</li>
+                    <Link to="/about"><li>About</li></ Link>
+                    <li className="menu-btn">Menu
+                       <ul className="bar">
+                       <Link to="/#"><li>Samosa</li></Link>
+                       <Link to="/#"><li>Bread Pakora</li></Link>
+                       <Link to="/#"><li>Aalu Pakora</li></Link>
+                       <Link to="/#"><li>Jalabi</li></Link>
+                       <Link to="/#"><li>Sweets</li></Link>
+                       <Link to="/#"><li>Ice Cream</li></Link>
+                       </ul>
+                    </li>
+                    <Link to="/#"><li>Contact</li></Link>
                 </ul>
                 <div className="phone-menues" id="p-m" style={p_style}>
                     <ul>
-                        <li>Home</li>
-                        <li>About</li>
-                        <li>Menu</li>
-                        <li>Contact</li>
+                    <Link to="/#"><li>Home</li></Link>
+                    <Link to="/#"><li>About</li></Link>
+                    <Link to="/#"><li>Menu</li></Link>
+                    <Link to="/#"><li>Contact</li></Link>
                     </ul>
                 </div>
             </nav>

@@ -14,7 +14,6 @@ main div.burger-con h2{
 }
 
 main div.main-con-dishes{
-    border: 2px solid black;
     padding: 40px 20px;
 }
 
@@ -22,11 +21,9 @@ main div.main-con-dishes div.dish1{
    display: flex;
    justify-content: center;
    margin: 40px 0px;
-   border: 1px solid yellow;
 }
 
 main div.main-con-dishes div.dish1 div{
-    border: 2px solid red;
     width: 600px;
     padding: 40px 20px;
 }
@@ -45,12 +42,7 @@ main div.main-con-dishes div.dish2 div{
     margin-right: 40px;
 }
 
-main div.contact-con{
-   border: 2px solid gray;
-}
-
 main div.contact-con div.sub-con{
-    border: 2px solid rgb(197, 76, 76);
     width: 1180px;
     margin: auto;
  }
@@ -80,8 +72,9 @@ main div.contact-con form input{
 
 main div.contact-con form input[type="submit"]{
      width: 160px;
+     border: none;
+     border: 1px solid rgb(175, 172, 172);
      padding: 10px 2px;
-     border: 1px solid gray;
 }
 
 
