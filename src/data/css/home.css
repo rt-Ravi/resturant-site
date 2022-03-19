@@ -15,12 +15,14 @@ main div.burger-con h2{
 
 main div.main-con-dishes{
     padding: 40px 20px;
+    /* border: 2px solid black; */
 }
 
 main div.main-con-dishes div.dish1{
    display: flex;
    justify-content: center;
    margin: 40px 0px;
+   /* border: 1px solid red; */
 }
 
 main div.main-con-dishes div.dish1 div{
@@ -42,21 +44,29 @@ main div.main-con-dishes div.dish2 div{
     margin-right: 40px;
 }
 
+main div.contact-con{
+    background-color: rgb(241, 241, 241);
+ }
+
 main div.contact-con div.sub-con{
     width: 1180px;
-    margin: auto;
+    /* background-color: rgb(241, 241, 241); */
+    padding: 10px 0px;
+    margin: 10px auto;
  }
 
- main div.contact-con div.sub-con form{
-   padding: 0px 10px;
- }
-
+ 
 main div.contact-con div.sub-con div :not(no){
-    padding: 14px 0px;
-}
-
+     padding: 14px 0px;
+     text-align: justify;
+    }
+    
 main div.contact-con div.sub-con div h1{
     font-size: 3rem;
+}
+    
+main div.contact-con div.sub-con form{
+    padding: 0px 10px;
 }
 
 main div.contact-con form input{
@@ -102,12 +112,14 @@ main div.contact-con form input[type="submit"]{
        flex-direction: column;
        justify-content: center;
        align-items: center;
+       margin: 0;
+       padding: 0;
     }
 
     main div.main-con-dishes div.dish1{
         flex-direction: column;
         width: 95vw;
-        margin: 40px 0px;
+        margin: 10px 0px;
     }
 
     main div.main-con-dishes div.dish1 img{
@@ -121,5 +133,8 @@ main div.contact-con form input[type="submit"]{
        box-sizing: border-box;
 
     }
-    
+
+    main div.contact-con div.sub-con div{
+       padding: 0px 10px;
+     }
 }

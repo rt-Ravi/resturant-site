@@ -79,6 +79,7 @@ nav div.phone-menues{
    display: none;
    overflow: hidden;
    height: 0px;
+   box-sizing: border-box;
 
    transition: all 0.4s ease-in-out;
 }
@@ -86,6 +87,33 @@ nav div.phone-menues{
 nav div.phone-menues ul{
    list-style: none;
    font-size: 1.2rem;
+   border: 1px solid transparent;
+}
+
+nav div.phone-menues ul li.phone-menu-btn{
+   position: relative;
+   display: inline-block;   
+   margin: 0px;
+   /* border: 1px solid black; */
+}
+
+nav div.phone-menues ul li.phone-menu-btn ul.phone-bar{
+   position: absolute;
+   z-index: 2;
+   top: 100%;
+   left: 10%;
+   width: 110px;
+   background-color: aliceblue;
+   visibility: hidden;
+ }
+
+nav div.phone-menues ul li.phone-menu-btn ul.phone-bar li{
+    margin: 0;
+    padding: 4px;
+}
+
+nav div.phone-menues ul li.phone-menu-btn:hover  ul.phone-bar{
+   visibility: visible;
 }
 
 nav div.phone-menues ul li{

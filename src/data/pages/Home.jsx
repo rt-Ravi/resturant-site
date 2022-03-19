@@ -27,7 +27,7 @@ function HomePage() {
                     <img src={burger} alt="buger" />
                     <h2>Le Catering</h2>
                 </div>
-
+                <hr />
                 <div className="main-con-dishes">
                     <div className="dish1">
                         <img src={tablesetting1} alt="dish1" />
@@ -56,6 +56,7 @@ function HomePage() {
                         <img src={tablesetting2} alt="dish1" />
                     </div>
                 </div>
+                <hr />
                 <div className="contact-con">
                     <div className="sub-con">
                         <div>
@@ -67,7 +68,7 @@ function HomePage() {
                         <form action="">
                             <input type="text" placeholder="Name" name="username" value={input.username || ""} onChange={handleChange}></input>
                             <input type="number" placeholder="How many People" name="number" value={input.number || ""} onChange={handleChange}></input>
-                            <input type="date" name="date" value={input.date || ""} onChange={handleChange}/>
+                            <input type="date" name="date" value={input.date || ""} onChange={handleChange} placeholder="Date of Birth"/>
                             <input type="text" placeholder="Message \ Special requirements" name="message" value={input.message || ""} onChange={handleChange}/>
                             <input type="submit" value="SEND MESSAGE" onClick={showInput}/>
                         </form>

@@ -1,5 +1,5 @@
 import "../css/nav.css";
-import {Link } from 'react-router-dom';
+import { Link } from 'react-router-dom';
 import { useState } from "react";
 
 function Navbar() {
@@ -14,7 +14,7 @@ function Navbar() {
             setP_style({ height: "160px", display: "block" });
             setShow_nav(false);
             intervalId = setInterval(() => {
-                if(window.outerWidth >= 619){
+                if (window.outerWidth >= 619) {
                     setP_style({ height: "0px", display: "block" });
                     clearInterval(intervalId);
                 }
@@ -22,6 +22,7 @@ function Navbar() {
             setTimeout(() => {
                 setShow_nav(true);
                 setUp(false);
+                setP_style(values => ({...values, overflow: "unset"}));
             }, 400);
         }
 
@@ -39,36 +40,41 @@ function Navbar() {
     return (
         <>
             <header>
-            <nav>
-                <div className="phone-nav" onClick={() => { phone_menu() }}>
-                    <p>Click</p>
-                </div>
-                <span className="main-heading">
-                    <Link to="/"><h1>Gourmet au Catering</h1></Link>
-                </span>
-                <ul className="left-side-links">
-                    <Link to="/about"><li>About</li></ Link>
-                    <li className="menu-btn">Menu
-                       <ul className="bar">
-                       <Link to="/#"><li>Samosa</li></Link>
-                       <Link to="/#"><li>Bread Pakora</li></Link>
-                       <Link to="/#"><li>Aalu Pakora</li></Link>
-                       <Link to="/#"><li>Jalabi</li></Link>
-                       <Link to="/#"><li>Sweets</li></Link>
-                       <Link to="/#"><li>Ice Cream</li></Link>
-                       </ul>
-                    </li>
-                    <Link to="/contact"><li>Contact</li></Link>
-                </ul>
-                <div className="phone-menues" id="p-m" style={p_style}>
-                    <ul>
-                    <Link to="/"><li>Home</li></Link>
-                    <Link to="/about"><li>About</li></Link>
-                    <Link to="/#"><li>Menu</li></Link>
-                    <Link to="/contact"><li>Contact</li></Link>
+                <nav>
+                    <div className="phone-nav" onClick={() => { phone_menu() }}>
+                        <p>Click</p>
+                    </div>
+                    <span className="main-heading">
+                        <Link to="/"><h1>Gourmet au Catering</h1></Link>
+                    </span>
+                    <ul className="left-side-links">
+                        <Link to="/about"><li>About</li></ Link>
+                        <li className="menu-btn">Menu
+                            <ul className="bar">
+                                <Link to="/breakfast"><li>Break Fast</li></Link>
+                                <Link to="/lunch"><li>Lunch</li></Link>
+                                <Link to="/dinner"><li>Diner</li></Link>
+                                <Link to="/#"><li>Desert</li></Link>
+                            </ul>
+                        </li>
+                        <Link to="/contact"><li>Contact</li></Link>
                     </ul>
-                </div>
-            </nav>
+                    <div className="phone-menues" id="p-m" style={p_style}>
+                        <ul>
+                            <Link to="/"><li>Home</li></Link>
+                            <Link to="/about"><li>About</li></Link>
+                            <li className="phone-menu-btn">Menu
+                                <ul className="phone-bar">
+                                    <Link to="/breakfast"><li>Break Fast</li></Link>
+                                    <Link to="/lunch"><li>Lunch</li></Link>
+                                    <Link to="/dinner"><li>Diner</li></Link>
+                                    <Link to="/#"><li>Desert</li></Link>
+                                </ul>
+                            </li>
+                            <Link to="/contact"><li>Contact</li></Link>
+                        </ul>
+                    </div>
+                </nav>
             </header>
         </>
     )
