@@ -3,8 +3,14 @@ import parter1 from "../images/p1.png";
 import parter2 from "../images/p2.png";
 import parter3 from "../images/p3.png";
 import "../css/about.css";
+import { useEffect } from "react";
 
 function About() {
+
+    useEffect(() =>{
+        document.title = " Gourmet au Catering | About";
+    }, []);
+
     return (
         <>
             <main>

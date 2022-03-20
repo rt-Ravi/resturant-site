@@ -1,7 +1,13 @@
 import Desert_items from "../API/Dessert";
 import "../css/lunch.css";
+import { useEffect } from "react";
 
 function Dessert(){
+
+    useEffect(() =>{
+        document.title = " Gourmet au Catering | Dessert";
+    }, []);
+
     return(
         <>
             <main>

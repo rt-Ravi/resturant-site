@@ -3,10 +3,15 @@ import burger from "../images/hamburger.png";
 import tablesetting1 from "../images/tablesetting1.png";
 import tablesetting2 from "../images/tablesetting2.png";
 import {useState} from "react";
+import { useEffect } from "react";
 
 function HomePage() {
 
     const [input, setInput] = useState({});
+
+    useEffect(() =>{
+        document.title = " Gourmet au Catering | Home";
+    }, []);
 
     const handleChange = (event) => {
         const name = event.target.name;

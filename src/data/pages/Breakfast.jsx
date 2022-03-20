@@ -1,7 +1,13 @@
 import breakfast_items from "../API/breakfast";
 import "../css/lunch.css";
+import { useEffect } from "react";
 
 function Breakfast(){
+
+    useEffect(() =>{
+        document.title = " Gourmet au Catering | Breakfast";
+    }, []);
+
     return(
         <>
             <main>

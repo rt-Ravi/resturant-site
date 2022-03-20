@@ -1,9 +1,13 @@
 import "../css/contact.css";
 import {useState} from "react";
+import { useEffect } from "react";
 
 function Contact(){
-
     const [input, setInput] = useState({});
+
+    useEffect(() =>{
+        document.title = " Gourmet au Catering | Contact";
+    }, []);
 
     const handleChange = (event) => {
         const name = event.target.name;
