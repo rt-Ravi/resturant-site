@@ -23,17 +23,17 @@ function About() {
                             <div className="partners">
                                 <div>
                                     <div className="about-img-con"><img src={parter1} alt="" /></div>
-                                    <h3>Soo Nam - Manager</h3>
+                                    <h3>Marry Wan - Manager</h3>
                                     <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Unde maxime aperiam adipisci. Non, placeat! Esse distinctio reprehenderit fugiat eaque excepturi, ducimus quod odit error nam inventore porro. Aliquid libero cumque maxime eveniet deserunt quisquam. Alias earum doloremque at assumenda eligendi.</p>
                                 </div>
                                 <div>
                                     <div className="about-img-con"><img src={parter2} alt="" /></div>
-                                    <h3>Sik choo - CEO</h3>
+                                    <h3>Han crew - CEO</h3>
                                     <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Explicabo inventore fugit, fuga quam excepturi perspiciatis molestiae exercitationem reiciendis asperiores odit accusantium dolores porro provident non distinctio repellendus a quidem fugiat sapiente totam. Perspiciatis, ex! Optio aspernatur placeat nobis! Totam, iure.</p>
                                 </div>
                                 <div>
                                     <div className="about-img-con"><img src={parter3} alt="" /></div>
-                                    <h3>Nan Boo - Director</h3>
+                                    <h3>Otis Marchetie - Director</h3>
                                     <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quae tenetur ex ullam nobis architecto dolores natus nesciunt veritatis id molestias modi ipsum velit repellendus ad porro ducimus voluptatem, eum, iste reprehenderit. Iste reiciendis reprehenderit nihil similique praesentium, nesciunt itaque blanditiis?</p>
                                 </div>
                             </div>

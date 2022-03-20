@@ -6,7 +6,7 @@ function Footer() {
                 <footer>
                     <div>
                         <p>
-                            All Rights Reserved
+                            All Rights Reserved &copy;
                         </p>
                     </div>
                 </footer>

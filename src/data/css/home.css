@@ -9,7 +9,7 @@ main div.burger-con img{
 
 main div.burger-con h2{
     position: absolute;
-    bottom: 2%;
+    bottom: 4%;
     left: 1%;
 }
 
@@ -106,6 +106,10 @@ main div.contact-con form input[type="submit"]{
 }
 
 @media screen and (max-width:850px){
+
+    main div.burger-con h2{
+       font-size: 1rem;
+    }
 
     main div.main-con-dishes{
        display: flex;

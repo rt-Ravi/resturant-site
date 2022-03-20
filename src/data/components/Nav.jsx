@@ -42,7 +42,7 @@ function Navbar() {
             <header>
                 <nav>
                     <div className="phone-nav" onClick={() => { phone_menu() }}>
-                        <p>Click</p>
+                        <p>|||</p>
                     </div>
                     <span className="main-heading">
                         <Link to="/"><h1>Gourmet au Catering</h1></Link>
@@ -54,7 +54,7 @@ function Navbar() {
                                 <Link to="/breakfast"><li>Break Fast</li></Link>
                                 <Link to="/lunch"><li>Lunch</li></Link>
                                 <Link to="/dinner"><li>Diner</li></Link>
-                                <Link to="/#"><li>Desert</li></Link>
+                                <Link to="/dessert"><li>Dessert</li></Link>
                             </ul>
                         </li>
                         <Link to="/contact"><li>Contact</li></Link>
@@ -68,7 +68,7 @@ function Navbar() {
                                     <Link to="/breakfast"><li>Break Fast</li></Link>
                                     <Link to="/lunch"><li>Lunch</li></Link>
                                     <Link to="/dinner"><li>Diner</li></Link>
-                                    <Link to="/#"><li>Desert</li></Link>
+                                    <Link to="/dessert"><li>Dessert</li></Link>
                                 </ul>
                             </li>
                             <Link to="/contact"><li>Contact</li></Link>

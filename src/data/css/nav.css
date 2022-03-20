@@ -123,6 +123,10 @@ nav div.phone-menues ul li{
 
 @media screen  and (max-width:600px){
 
+    nav{
+        padding: 10px;
+    }
+
     nav div.phone-nav{
         display: block;
      }

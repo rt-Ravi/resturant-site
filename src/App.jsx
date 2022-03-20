@@ -5,6 +5,7 @@ import Contact from "./data/pages/Contact";
 import Lunch from "./data/pages/Lunch";
 import Breakfast from "./data/pages/Breakfast";
 import Dinner from "./data/pages/Dinner";
+import Dessert from "./data/pages/Dessert";
 import { Route, Routes} from "react-router-dom";
 function App(){
     return(
@@ -17,6 +18,7 @@ function App(){
                     <Route path="/lunch" element={<Lunch />} />
                     <Route path="/breakfast" element={<Breakfast />} />
                     <Route path="/dinner" element={<Dinner />} />
+                    <Route path="/dessert" element={<Dessert />} />
                 </Route>
             </Routes>
         </>
