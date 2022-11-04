@@ -32,7 +32,6 @@ function HomePage() {
                     <img src={burger} alt="buger" />
                     <h2>Le Catering</h2>
                 </div>
-                <hr />
                 <div className="main-con-dishes">
                     <div className="dish1">
                         <img src={tablesetting1} alt="dish1" />
@@ -61,7 +60,6 @@ function HomePage() {
                         <img src={tablesetting2} alt="dish1" />
                     </div>
                 </div>
-                <hr />
                 <div className="contact-con">
                     <div className="sub-con">
                         <div>

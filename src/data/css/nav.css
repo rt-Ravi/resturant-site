@@ -76,6 +76,11 @@ nav ul.left-side-links li{
     color: rgb(85, 83, 83);
 }
 
+nav div.phone-nav p{
+    display: inline-block;
+    transform: rotate(90deg);
+ }
+
 nav div.phone-menues{
    display: none;
    overflow: hidden;
